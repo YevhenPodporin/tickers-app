@@ -1,0 +1,58 @@
+div.card{
+	position: relative;
+	font-size: 12px;
+	width: 210px;
+	background-color: rgb(255, 212, 212);
+	display: flex;
+	flex-direction: row;
+	border: 2px solid rgba(251, 217, 158, 0.601);
+	border-radius: 5px;
+	padding:5px ;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+div.card>div{
+	margin-right: 10px;
+	text-align: center;
+	width: 50px;
+}
+div.card>.card__change-price{
+	text-align: right;
+}
+div.card>div.card__icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 30px;
+	color: white;
+	background-color: green;
+	border-radius: 8px;
+}
+div.card__icon span{
+	line-height: 14px;
+}
+
+div.card>div.card__icon.price__up{
+	transition: 0.3s;
+	color: white;
+	background-color: rgba(0, 128, 0, 0.633);
+}
+div.card> div.card__icon.price__down{
+	transition: 0.3s;
+	color: red;
+	background-color: rgba(254, 124, 124, 0.852);
+}
+.ticker__name{
+	font-size: 14px;
+}
+.hide-ticker{
+	position: absolute;
+	top:0;
+	right: 0;
+	background: rgb(234, 17, 17);
+	color:white;
+	border:2px solid black;
+	border-radius: 4px;
+}
